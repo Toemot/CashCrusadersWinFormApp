@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CashCrusaders.WFApp", "CashCrusaders.WFApp\CashCrusaders.WFApp.csproj", "{7579D207-EE94-4838-9D1E-6401CF5B99CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CashCrusaders.DataAccess", "CashCrusaders.DataAccess\CashCrusaders.DataAccess.csproj", "{A81EC463-CDC8-4CF0-A717-39775630597A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7579D207-EE94-4838-9D1E-6401CF5B99CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7579D207-EE94-4838-9D1E-6401CF5B99CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7579D207-EE94-4838-9D1E-6401CF5B99CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7579D207-EE94-4838-9D1E-6401CF5B99CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A81EC463-CDC8-4CF0-A717-39775630597A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A81EC463-CDC8-4CF0-A717-39775630597A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A81EC463-CDC8-4CF0-A717-39775630597A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A81EC463-CDC8-4CF0-A717-39775630597A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {62F070D4-DE28-495A-B2B3-B3968D5F5268}
+	EndGlobalSection
+EndGlobal
