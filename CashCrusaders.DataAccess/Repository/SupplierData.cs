@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,14 +16,14 @@ namespace CashCrusaders.DataAccess.Repository
             _context = context;
         }
 
-        public IEnumerable<Supplier> GetAllSuppliers()
+        public async Task<IEnumerable<Supplier>> GetAllSuppliersAsync()
         {
-            return _context.Suppliers.ToList();
+            return await _context.Suppliers.ToListAsync();
         }
 
-        public void SaveSupplier(Supplier supplier)
+        public async Task SaveSupplierAsync(Supplier supplier)
         {
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
         }
     }
 }

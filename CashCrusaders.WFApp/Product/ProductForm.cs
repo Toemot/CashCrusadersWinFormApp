@@ -1,4 +1,6 @@
-﻿using System;
+﻿using CashCrusaders.DataAccess;
+using CashCrusaders.DataAccess.Repository;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +14,14 @@ namespace CashCrusaders.WFApp.Product
 {
     public partial class ProductForm : Form
     {
+        CashCrusadersDbContext Context = new CashCrusadersDbContext();
+
+        private readonly MainViewModel _viewModel;
+
         public ProductForm()
         {
             InitializeComponent();
+            //_viewModel = new MainViewModel(new ProductData(Context));
         }
     }
 }

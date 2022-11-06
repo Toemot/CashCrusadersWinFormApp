@@ -8,7 +8,7 @@ namespace CashCrusaders.DataAccess.Repository
 {
     public interface IProductData
     {
-        IEnumerable<Product> GetProducts();
-        void SaveProduct(Product product);
+        Task<IEnumerable<Product>> GetProductsAsync();
+        Task SaveProductAsync(Product product);
     }
 }

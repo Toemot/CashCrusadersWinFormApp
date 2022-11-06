@@ -53,9 +53,16 @@ namespace CashCrusaders.DataAccess
 
         public bool CanSave => !string.IsNullOrEmpty(SupplierName);
 
-        public void Save()
+        public async void Save()
         {
-            _supplierData.SaveSupplier(_supplier);
+            try
+            {
+                await _supplierData.SaveSupplierAsync(_supplier);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
     }
 }

@@ -131,9 +131,16 @@ namespace CashCrusaders.DataAccess
 
         public bool CanSave => !string.IsNullOrEmpty(PurchaseOrderNumber.ToString());
 
-        public void Save()
+        public async void Save()
         {
-            _orderData.SavePurchaseOrder(_purchaseOrder);
+            try
+            {
+                await _orderData.SavePurchaseOrderAsync(_purchaseOrder);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
     }
 }

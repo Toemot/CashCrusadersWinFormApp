@@ -14,7 +14,6 @@ namespace CashCrusaders.WFApp
 {
     public partial class MainForm : Form
     {
-        //private readonly CashCrusadersDbContext _context;
         CashCrusadersDbContext Context = new CashCrusadersDbContext();
 
         private readonly MainViewModel _viewModel;

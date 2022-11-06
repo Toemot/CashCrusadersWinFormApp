@@ -40,9 +40,9 @@ namespace CashCrusaders.DataAccess
 
         public bool IsSupplierSelected => SelectedSupplier != null;
 
-        public void Load()
+        public async void Load()
         {
-            var suppliers = _supplierData.GetAllSuppliers();
+            var suppliers = await _supplierData.GetAllSuppliersAsync();
             Suppliers.Clear();
             foreach (var supplier in suppliers)
             {

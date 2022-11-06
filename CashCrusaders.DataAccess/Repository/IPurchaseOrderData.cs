@@ -8,7 +8,7 @@ namespace CashCrusaders.DataAccess.Repository
 {
     public interface IPurchaseOrderData
     {
-        IEnumerable<PurchaseOrder> GetAllPurchaseOrder();
-        void SavePurchaseOrder(PurchaseOrder purchaseOrder);
+        Task<IEnumerable<PurchaseOrder>> GetAllPurchaseOrderAsync();
+        Task SavePurchaseOrderAsync(PurchaseOrder purchaseOrder);
     }
 }

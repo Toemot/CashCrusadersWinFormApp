@@ -8,7 +8,7 @@ namespace CashCrusaders.DataAccess.Repository
 {
     public interface ISupplierData
     {
-        IEnumerable<Supplier> GetAllSuppliers();
-        void SaveSupplier(Supplier supplier);
+        Task<IEnumerable<Supplier>> GetAllSuppliersAsync();
+        Task SaveSupplierAsync(Supplier supplier);
     }
 }
